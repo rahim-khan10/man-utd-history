@@ -2,11 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Man Utd History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United History</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .sub-title {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        #history-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #d32f2f;
+            text-align: center;
+        }
+
+        ul#history-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul#history-list li {
+            background-color: #fafafa;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #d32f2f;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul#history-list li:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Manchester United History</h1>
-    <ul id="history-list"></ul>
-    <script src="./app.js"></script>
+    <header>
+        <h1>Manchester United History</h1>
+        <p class="sub-title">A journey through the iconic moments of the club</p>
+    </header>
+
+    <div id="history-container">
+        <h2>Club Milestones</h2>
+        <ul id="history-list">
+            <!-- History items will be loaded here dynamically -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by Rahim Khan</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
+
